@@ -4,7 +4,6 @@ import { Notify } from "notiflix";
 import ContactForm from "./ContactForm";
 import ContactList from "./ContactList";
 import Filter from "./Filter";
-import styles from './App.module.css'; 
 
 class App extends Component {
   state = {
