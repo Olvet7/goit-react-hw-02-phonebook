@@ -2,11 +2,11 @@ import PropTypes from 'prop-types';
 import styles from './contactList.module.css'
 
 const ContactList = ({contacts, deleteContact}) => {
-    const elements = contacts.map(({id, name, number}) => <li key={id}>{name}: {number} <button onClick={() => deleteContact(id)} type="button">Delete</button> </li>)
+    const elements = contacts.map(({id, name, number}) => <li className={styles.li} key={id}>{name}: {number} <button className={styles.button}onClick={() => deleteContact(id)} type="button">Delete</button></li>)
     return (
         <div className={styles.form}>
             <h2 className={styles.title}>Contacts</h2>
-            <ol>
+            <ol className={styles.elements}>
                 {elements} 
             </ol>
         </div>

@@ -14,6 +14,7 @@ class Filter extends Component {
 			<div className={styles.filter}>
 				<p className={styles.title}>Find contacts by name</p>
 				<input 
+				className={styles.input}
 				placeholder="Search"
 				type="text" 
 				onChange={onFilter} value={filter}  />

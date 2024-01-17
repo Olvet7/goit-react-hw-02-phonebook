@@ -67,7 +67,7 @@ class App extends Component {
     const contacts = this.getFilteredContact();
 
     return (
-      <div className={styles.section}>
+      <div>
         <ContactForm onSubmit={addContact}/>
         <Filter onFilter={changeFilter} filter={filter}/>     
         <ContactList contacts={contacts} deleteContact={deleteContact}/>
