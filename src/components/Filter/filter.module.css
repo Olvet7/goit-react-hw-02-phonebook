@@ -1,0 +1,12 @@
+.filter {
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.title {
+    text-align: center;
+}
